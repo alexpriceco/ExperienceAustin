@@ -1,0 +1,118 @@
+/* INFO */
+
+/*
+    black: #1C1E21;
+    black alt: #2D2E30;
+    blue: #3A75C0;
+    link blue: #75A9E6; <- darker variant
+    link-hover blue: #7BB5F6; <- lighter variant
+    red: #C93E3B;
+    green: #51AC45;
+    yellow: #EDAD55;
+    hover yellow: #D49B4B;
+    white: #F4F4F4;
+    grey: #9D9D9D;
+*/
+
+
+/* GENERAL */
+
+html, body {
+    font-family: "open sans", "helvetica", sans-serif;
+    background-color: #F4F4F4; 
+    color: #1C1E21;
+    height:100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #75A9E6;
+    text-decoration: none;
+}
+a:hover {
+    color: #7BB5F6;
+}
+article {
+}
+.hr {
+}
+.video {
+    width:100%;
+    margin: 0 auto;
+    background-color: black;
+}
+.button {
+    padding: 12px;
+    margin: 2px 8px;
+    border: 1px solid #9D9D9D;
+    background-color: inherit;
+    color: #9D9D9D;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.button:hover {
+    border: 1px solid #B2B2B2;
+    background-color: #F4F4F4;
+    color: #1C1E21;
+    transition: all 0.12s ease;
+}
+.red {
+    background-color: #C93E3B;
+    border-color: #C93E3B;
+    color: #F4F4F4;
+}
+.green {
+    background-color: #51AC45;
+    border-color: #51AC45;
+    color: #F4F4F4;
+}
+.blue {
+    background-color: #3A75C0;
+    border-color: #3A75C0;
+    color: #F4F4F4;
+}
+
+/*HEADER*/
+#top {
+    background: url(example.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: inherit;
+    text-align: center;
+}
+.hero {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-title {
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.hero-sub {
+    font-size:2em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*FOOTER*/
+footer {
+    color: rgba(73, 75, 77, .55);
+    font-size: 0.8em;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    text-align: center;
+}
+footer a {
+    color: rgba(120, 168, 235, .5);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+footer a:hover {
+    color: rgba(126, 179, 252, 1);
