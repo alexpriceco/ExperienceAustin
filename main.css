@@ -12,6 +12,7 @@
     hover yellow: #D49B4B;
     white: #F4F4F4;
     grey: #9D9D9D;
+    mint: #8DFEAE;
 */
 
 
@@ -44,8 +45,8 @@ article {
     background-color: black;
 }
 .button {
-    padding: 12px;
-    margin: 2px 8px;
+    padding: 16px;
+    display: inline-block;
     border: 1px solid #9D9D9D;
     background-color: inherit;
     color: #9D9D9D;
@@ -59,25 +60,22 @@ article {
     color: #1C1E21;
     transition: all 0.12s ease;
 }
-.red {
-    background-color: #C93E3B;
-    border-color: #C93E3B;
-    color: #F4F4F4;
+.mint {
+    background-color: #8DFEAE;
+    border-color: #8DFEAE;
+    color: #3D3D3D;
 }
-.green {
-    background-color: #51AC45;
-    border-color: #51AC45;
-    color: #F4F4F4;
+.text {
+    padding: 0 30%;
 }
-.blue {
-    background-color: #3A75C0;
-    border-color: #3A75C0;
-    color: #F4F4F4;
+.people {
+    padding: 5% 20% 0 20%;
+    text-align: center;
 }
 
-/*HEADER*/
-#top {
-    background: url(example.jpg) no-repeat center center fixed; 
+/*HERO*/
+#tophat {
+    background: url(01.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -87,8 +85,10 @@ article {
 }
 .hero {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 auto;
+    top: 40%;
+    transform: translateY(-10%);
+    color: rgba(28, 30, 33, .9);
 }
 .hero-title {
     font-size: 5em;
@@ -101,6 +101,63 @@ article {
     font-style: italic;
 }
 
+
+/*INFO*/
+.title {
+    font-size: 2em;
+    font-weight: 800;
+}
+.content {
+    padding: 7% 0;
+}
+.player {
+    background-color: black;
+    width:100%;
+    text-align: center;
+    z-index:99;
+}
+.videoembed {
+    display:block;
+    line-height: 0;
+    margin: 0 auto;
+}
+
+/*CREW*/
+.crew {
+    background: url(03.jpg) no-repeat center center fixed;
+    color: #F4F4F4;
+}
+.profile {
+    width: 30%;
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.9em;
+    margin-bottom: 2%;
+}
+.profpic {
+    border-radius: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    max-height: 200px;
+}
+.job {
+    font-style: italic;
+    text-align: left;
+}
+
+/*SHOP*/
+.shop {
+    text-align: center;
+    padding:64px;
+}
+.vr {
+    display: inline-block;
+    padding: 6px 0;
+    margin: 0 16px;
+    border-left: 1px solid rgba(28, 30, 33, 0.3);
+}
+
 /*FOOTER*/
 footer {
     color: rgba(73, 75, 77, .55);
@@ -108,11 +165,12 @@ footer {
     margin: 0 auto;
     margin-bottom: 2%;
     text-align: center;
+    padding:24px;
 }
 footer a {
-    color: rgba(120, 168, 235, .5);
+    color: rgba(120, 168, 235, .9);
     text-decoration: none;
     transition: all 0.2s ease;
 }
 footer a:hover {
-    color: rgba(126, 179, 252, 1);
+    color: rgba(126, 179, 252, .7);

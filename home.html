@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,300,700,800' 
+          rel='stylesheet' type='text/css'>    
+    <!-- We primarily use Open Sans, a great free font, available at opensans.com -->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       Scroller={speed:20,offset:0,gy:function(e){var t=e.offsetTop;if(e.offsetParent){while(e=e.offsetParent){t+=e.offsetTop}}return t-this.offset},scrollTop:function(){var e=document.body;var t=document.documentElement;if(e&&e.scrollTop)return e.scrollTop;if(t&&t.scrollTop)return t.scrollTop;if(window.pageYOffset)return window.pageYOffset;return 0},add:function(e,t,n){if(e.addEventListener)return e.addEventListener(t,n,false);if(e.attachEvent)return e.attachEvent("on"+t,n)},end:function(e){if(window.event){window.event.cancelBubble=true;window.event.returnValue=false;return}if(e.preventDefault&&e.stopPropagation){e.preventDefault();e.stopPropagation()}},scroll:function(e){var t=window.innerHeight||document.documentElement.clientHeight;var n=document.body.scrollHeight;var r=Scroller.scrollTop();if(n-e<t){e=n-t}var i=(e-r)/Scroller.speed;if(e>r){i=Math.ceil(i)}else{i=Math.floor(i)}r+=i;window.scrollTo(0,r);Scroller.previousPos=r;if(r==e||i==0){clearInterval(Scroller.interval);Scroller.previousPos=false}},init:function(){Scroller.add(window,"load",Scroller.render)},render:function(){Scroller.end(this);var e=document.getElementsByTagName("a");for(var t=0;t<e.length;t++){var n=e[t];if(n.href&&n.href.indexOf("#")!=-1&&n.href.indexOf("#")!=n.href.length-1&&(n.pathname==location.pathname||"/"+n.pathname==location.pathname)){Scroller.add(n,"click",function(){Scroller.end(this);var t=this.hash.substr(1);var n=document.getElementById(t);if(!n){for(var r=0;r<e.length;r++){if(e[r].name==t){n=e[r];break}}}if(n){clearInterval(Scroller.interval);Scroller.interval=setInterval(function(){Scroller.scroll(Scroller.gy(n))},10)}})}}}};Scroller.init()
+    </script>    
+    
+    <title>Experience Austin</title>
+    
+</head>
+
+<body>
+    
+    <article id="tophat">
+        
+        <div class="hero">
+            <span class="hero-title">The Austin Experience</span>
+            <br>
+            <span class="hero-sub">&#8212; like you've never seen before &#8212;</span>
+        </div>
+        
+    </article>
+       
+    
+    
+    
+    <article class="info">
+        <div class="content">
+            
+        <div class="text">
+            <div class="title">about the film</div>
+            The Austin Experience takes you high into the sky, among our tallest buildings, as well as deep into the culture and landscape of Austin. See the city in breathtaking new ways, and learn about the rich array of fun, and beautiful places, people, and activities that Austin has to offer. <br><br>Check out the trailer below to get a taste of the film.
+            </div>
+        </div>
+        
+        <div class="player">
+            <iframe width="1280" height="720" src="http://www.youtube.com/embed/2YBtspm8j8M?autohide=1&controls=1&info=0&theme=dark&modestbranding=1" frameborder="0" allowfullscreen class="videoembed"></iframe>
+        </div>
+    </article>
+
+    
+    
+    
+    <article class="crew">
+        <div class="content">
+            <div class="text">
+                <div class="title">about the crew</div>
+                We put together a group of talented students, proficient at film making and lorem ipsum.
+            </div>
+            
+            <div class="people">
+            <div class="profile">
+                <img src="guy1.jpg" class="profpic" /><br><br>
+                <span class="name"><b>Jared (Donald) Dunn</b></span><br>
+                <span class="job">Head of Business Development</span><br><br>
+                <span class="description">
+                    Jared&rsquo;s early life is best passed over, but he managed to rise above it thanks to a series of largely well-meaning foster parents, and went on to receive a B.A. from Vassar College in Economics.
+                </span>
+            </div>
+
+            <div class="profile">
+                <img src="guy2.jpg" class="profpic" /><br><br>
+                <span class="name"><b>Birtram Gilfoyle</b></span><br>
+                <span class="job">Systems Architect</span><br><br>
+                <span class="description">
+                    In 2011 he replaced the homepage of the Federal Reserve with the cover of Neil Gaiman&rsquo;s &quot;Neverwhere.&quot; (paperback edition) It took them a week to get it down. You&rsquo;re welcome.
+                </span>
+            </div>
+
+            <div class="profile">
+                <img src="guy3.jpg" class="profpic" /><br><br>
+                <span class="name"><b>Basically Abee</b></span><br>
+                <span class="job">CEO of fun</span><br><br>
+                <span class="description">
+                    Born in Islamabad, Dinesh has received honors degrees in information theory and computer science from Yale, Caltech, and Oxford.
+                </span>
+            </div>
+
+            <div class="profile">
+                <img src="guy4.jpg" class="profpic" /><br><br>
+                <span class="name"><b>Basically Abee</b></span><br>
+                <span class="job">CEO of fun</span><br><br>
+                <span class="description">
+                    Born in Islamabad, Dinesh has received honors degrees in information theory and computer science from Yale, Caltech, and Oxford.
+                </span>
+            </div>
+
+            <div class="profile">
+                <img src="guy5.jpeg" class="profpic" /><br><br>
+                <span class="name"><b>Basically Abee</b></span><br>
+                <span class="job">CEO of fun</span><br><br>
+                <span class="description">
+                    Born in Islamabad, Dinesh has received honors degrees in information theory and computer science from Yale, Caltech, and Oxford.
+                </span>
+            </div>
+            </div>
+        </div>
+        
+    </article>
+    
+    <article class="shop">
+        <a href="#"><div class="button mint">browse the shop</div></a>
+        <div class="vr"></div>
+        <a href="#tophat"><div class="button mint">back to top</div></a>
+    </article>
+    
+    <footer>film by <a href="http://example.com">Minh Photography Productions</a> - web design by <a href="http://bowlofrice.us">Alex Price</a></footer>
+</body>
+
+</html>
